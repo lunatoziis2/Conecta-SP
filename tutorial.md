@@ -112,8 +112,34 @@ Abaixo tem uma imagem com a frase motivadora do projeto.
 
 **Destaques acessíveis:** Corpo da página, onde apresenta os pontos turísticos mais procurados, endereço, imagem e botão para selecionar o local e ver mais informações.
 
-**Rodapé:** Tem informações para contato, como email e número de celular.
-
+**Rodapé:** Tem informações para contato, como email e número de celular.  
 **Dia 03/09**  
-**Tela de login:** Fizemos a tela de login em html, começando com uma apresentação simples, para realizar o login pedindo algumas informações como o email ou cpf, senha, uma outra forma para quem ainda não tem conta, e outras maneiras de acesso.
+**Tela de login:** Fizemos a tela de login em html, começando com uma apresentação simples, para realizar o login pedindo algumas informações como o email ou cpf, senha, uma outra forma para quem ainda não tem conta, e outras maneiras de acesso. 
 
+---
+
+**Dia 10/09**  
+**Implementação de CSS \- Página de menu:** 
+
+* Organização do layout(Geral;  
+* Centralizar imagem principal (Body);  
+* Separação dos campos(Body);  
+* Colorir  campos de destaque, botões e fontes (Geral);  
+* Criação de containers (Body);  
+* Inserimos os ícones de contatos (Rodapé);  
+* Ajustes das imagens (Body e Rodapé);  
+* Sombreamento nos containers(Body);  
+* Funcionamento dos botões(Geral);  
+* Implementação de mídia para mobile(Geral).
+
+
+  
+**Implementação de CSS \- Tela de login:**
+
+* Separação dos campos(Body);   
+* Colorir fontes e botões(Geral);  
+* Ajuste da imagem(Body);  
+* Sombreamento no container(Body);  
+* Organização do layout(Geral);  
+* Implementação de mídia para mobile(Geral).  
+  

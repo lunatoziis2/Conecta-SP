@@ -1,0 +1,412 @@
+:root {
+    --cor-principal: red;
+    --sombra: 4px 4px 4px rgba(0,0,0,0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-principal: yellow;
+        --sombra: 4px 4px 4px rgba(1,1,1,0.25);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #20254d;
+    background-color: var(--cor-principal);
+}
+
+a {
+    text-decoration: none;
+}
+
+.conteiner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.topo {
+    width: 90%;
+    max-width: 1200px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conectasp h1 {
+    color: #5140b5;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.navegacao a {
+    color: #20254d;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navegacao a:hover {
+    color: #5140b5;
+}
+
+.navegacao .login {
+    background-color: #5140b5;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+.navegacao .login:hover {
+    background-color: #40329a;
+    color: white;
+}
+
+.imagem {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.conteiner_explor {
+    margin-top: -35px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    border-radius: 18px;
+    min-height: 110px;
+    padding: 25px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+.explor {
+    background-color: #5140b5;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.explor:hover {
+    background-color: #40329a;
+}
+
+.texto_explor {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: bold;
+    color: #20254d;
+}
+
+.conteiner_acess {
+    display: grid;
+    grid-template-columns: 0.9fr 1.3fr;
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.acessibilidade {
+    background-color: #f3f1fb;
+    border-radius: 18px;
+    padding: 35px;
+}
+
+.acessibilidade h2 {
+    color: #20254d;
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.acessibilidade h2::first-line {
+    color: #5140b5;
+}
+
+.painel_acess {
+    color: #55586b;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.topicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.topico {
+    color: #30334c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.proj_acess {
+    display: inline-block;
+    background-color: #5140b5;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.proj_acess:hover {
+    background-color: #40329a;
+}
+
+.destaques {
+    background-color: white;
+    border: 1px solid #eeeeee;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.destaques h2 {
+    color: #5140b5;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.lista_destaque {
+    width: 100%;
+}
+
+.lugar {
+    display: grid;
+    grid-template-columns: 110px 1fr auto;
+    gap: 18px;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.lugar:last-child {
+    border-bottom: none;
+}
+
+.lugar img {
+    width: 110px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.lugar h3 {
+    font-size: 16px;
+    color: #20254d;
+    margin-bottom: 5px;
+}
+
+.localizacao {
+    color: #77798a;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.lugar p {
+    color: #55586b;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.detalhes {
+    color: #5140b5;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.detalhes:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    width: 100%;
+    min-height: 140px;
+    background-color: #5140b5;
+    display: flex;
+    align-items: center;
+}
+
+.dentro_banner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.dentro_banner h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.dentro_banner p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #111943;
+    color: white;
+    padding: 45px 0 30px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.ConectaSP {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.texto_footer {
+    max-width: 360px;
+    margin-top: 18px;
+    color: #d8d9e4;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.rede_social {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.rede_social img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+.contato h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    color: #d8d9e4;
+    font-size: 13px;
+    margin-bottom: 13px;
+}
+
+@media (max-width: 900px) {
+
+    .topo {
+        height: auto;
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navegacao {
+        gap: 20px;
+    }
+
+    .imagem {
+        height: 400px;
+    }
+
+    .conteiner_explor {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .conteiner_acess {
+        grid-template-columns: 1fr;
+    }
+
+    .lugar {
+        grid-template-columns: 90px 1fr;
+    }
+
+    .lugar > div:last-child {
+        grid-column: 2;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .navegacao {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .imagem {
+        height: 300px;
+    }
+
+    .topicos {
+        grid-template-columns: 1fr;
+    }
+
+    .lugar {
+        grid-template-columns: 1fr;
+    }
+
+    .lugar img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .lugar > div:last-child {
+        grid-column: 1;
+    }
+
+    .texto_explor {
+        font-size: 17px;
+    }
+
+    .dentro_banner h2 {
+        font-size: 23px;
+    }
+}

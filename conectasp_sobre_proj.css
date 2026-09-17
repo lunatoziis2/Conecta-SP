@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.logo {
+    color: #4c3b8c;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: #4c3b8c;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 22px;
+    border: 2px solid #4c3b8c;
+    border-radius: 20px;
+}
+
+.navegacao a:hover {
+    background-color: #4c3b8c;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    gap: 50px;
+}
+
+.coluna-texto {
+    width: 50%;
+}
+
+.coluna-texto h2 {
+    color: #4c3b8c;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.coluna-texto h3 {
+    color: #333333;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.coluna-texto p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.coluna-imagem {
+    width: 50%;
+    text-align: center;
+}
+
+.coluna-imagem img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 25px;
+}
+
+footer {
+    background-color: #f3f1f8;
+    padding: 40px 60px;
+    text-align: center;
+}
+
+footer h3 {
+    color: #4c3b8c;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+
+/* Valores do projeto */
+.valor {
+    display: inline-block;
+    width: 140px;
+    margin: 10px 15px;
+    vertical-align: top;
+}
+
+.valor img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    margin-bottom: 10px;
+}
+
+.valor p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    margin: 5px 0;
+}
+@media (max-width: 900px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navegacao a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 35px 25px;
+        gap: 30px;
+    }
+
+    .coluna-texto {
+        width: 100%;
+    }
+
+    .coluna-texto h2 {
+        font-size: 27px;
+    }
+
+    .coluna-texto h3 {
+        font-size: 19px;
+    }
+
+    .coluna-texto p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .coluna-imagem {
+        width: 100%;
+    }
+
+    .coluna-imagem img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+
+    footer h3 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .valor {
+        width: 110px;
+        margin: 10px 5px;
+    }
+
+    .valor img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .valor p {
+        font-size: 14px;
+    }
+}

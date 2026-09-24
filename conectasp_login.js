@@ -9,19 +9,18 @@ formulario.addEventListener("submit", function(event) {
 
     if (emailCpf === "") {
         document.getElementById("message").textContent = "Digite seu e-mail ou CPF.";
-       // alert("Digite seu e-mail ou CPF.");
         return;
     }
 
     if (senha === "") {
-        alert("Digite sua senha.");
+        document.getElementById("message").textContent = "Digite sua senha.";
         return;
     }
 
     if (emailCpf.includes("@")) {
 
         if (!emailCpf.includes(".")) {
-            alert("Digite um e-mail válido.");
+            document.getElementById("message").textContent = "Digite um Email válido.";
             return;
         }
 
@@ -30,13 +29,13 @@ formulario.addEventListener("submit", function(event) {
         const cpf = emailCpf.replace(/\D/g, "");
 
         if (cpf.length !== 11) {
-            alert("Digite um CPF válido.");
+            document.getElementById("message").textContent = "Digite um CPF válido.";
             return;
         }
     }
 
     if (senha.length < 6) {
-        alert("A senha deve ter pelo menos 6 caracteres.");
+        document.getElementById("message").textContent = "A senha deve ter pelo menos 6 caracteres.";
         return;
     }
 

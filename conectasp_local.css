@@ -140,6 +140,23 @@ header {
     font-size: 16px;
     margin-bottom: 8px;
 }
+
+.ver-mais {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4c3b8c;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ver-mais:hover {
+    background-color: #372b70;
+}
+
 @media (max-width: 900px) {
 
     header {

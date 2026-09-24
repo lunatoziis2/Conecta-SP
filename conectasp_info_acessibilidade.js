@@ -25,7 +25,6 @@ categorias.forEach(function(categoria) {
                 itens[i].style.display = "none";
             }
 
-            botao.textContent = "Ver mais recursos";
         }
     });
 });
